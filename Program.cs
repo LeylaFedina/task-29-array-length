@@ -6,3 +6,19 @@
 
 3 -> [6, 1, 33]
 */
+Console.WriteLine("введите значение длины массива ");
+int maxUserNumber = Convert.ToInt32(Console.ReadLine ());
+
+int [] array = new int[maxUserNumber];
+
+Console.Write($"Массив из {maxUserNumber} элементов:[");
+for (int i = 0; i < maxUserNumber; i++)
+{
+    array [i] = new Random(). Next (1, 100);
+    Console.Write(array [i]);
+    if (i != maxUserNumber - 1)
+    {
+        Console.Write(",");
+    }
+}
+Console.Write("]");
